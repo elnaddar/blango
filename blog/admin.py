@@ -6,4 +6,4 @@ class PostAdmin(admin.ModelAdmin):
   list_display = ("title", "slug", "published_at")
 admin.site.register(models.Tag)
 admin.site.register(models.Post, PostAdmin)
-
+admin.site.register(models.Comment)
