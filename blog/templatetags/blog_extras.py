@@ -7,7 +7,7 @@ register = Library()
 
 @register.filter
 def author_details(author, current_user=None):
-  if not isinstance(author, user_model) or (not isinstance(current_user, user_model) and current_user is not None):
+  if not isinstance(author, user_model):
     # return empty string as safe default
     return ""
 
